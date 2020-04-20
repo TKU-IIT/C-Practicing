@@ -35,4 +35,11 @@ namespace{
 			return new cls(c1.val+1);
 		}
 	}
+	class Polymorphism{
+		static void main(string args[]){
+			cls c1 = new cls(5);
+			cls c2 = new cls(9);
+
+		}
+	}
 }
