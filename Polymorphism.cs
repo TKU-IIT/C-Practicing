@@ -15,9 +15,24 @@ namespace{
 		public cls(bool flag1){
 			flag = flag1;
 		}
-
-		public static cls operator +(){
-			return new cls(c1.val - c2.val);
+		//Arithmetic Operators
+		public static cls operator +(cls c1, cls c2){
+			return new cls(c1.val + c2.val);
+		}
+		public static cls operator -(cls c1, cls c2){
+			return new cls(c1.val - c1.val);
+		}
+		public static cls operator *(cls c1, cls c2){
+			return new cls(c1.val * c2.val);
+		}
+		public static cls operator /(cls c1, cls c2){
+			return new cls(c1.val / c2.val);
+		}
+		public static cls operator %(cls c1, cls c2){
+			return new cls(c1.val % c2.val);
+		}
+		public static cls operator ++(cls c1){
+			return new cls(c1.val+1);
 		}
 	}
 }
